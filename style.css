@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Bree+Serif&family=Nunito+Sans:wght@300&family=Ubuntu:ital,wght@1,300&display=swap');
+body{
+    background-color:  #534d45;
+}
+
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Ubuntu', sans-serif;
+    /* display: flex; */
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    background-color: black;
+    height: 50px;
+    color: aliceblue;
+    font-weight: bold;
+}
+nav ul li{
+    margin: 0px;
+    padding: 17px;
+}
+.logo img{
+    height: 50px;
+    border-radius: 22px;
+    padding: 0px 7px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+}
+.container{
+    min-height: 75vh;
+    background-image: url("../images/music.webp");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    opacity: 0.9;
+    width: 70%;
+    border: 3px solid rgb(37, 25, 2);
+    border-radius: 15px;
+    margin: 13px auto;
+    padding: 20px;
+    color: rgb(47 17 3);
+}
+
+
+.songItem{
+    height: 31px;
+    width: 50%;
+    display: flex;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.songItem img{
+    border-radius: 20px;
+    width: 32px;
+    /* filter: invert(1); */
+    margin: 0 10px;
+}
+.Timestamp{
+    margin: 0 20px;
+    
+}
+.Timestamp i{
+   
+    cursor: pointer;
+}
+.icons{
+    margin-top: 12px;
+    cursor: pointer;
+}
+#progressbar{
+    width: 80vw;
+    cursor: pointer;
+}
+.playingGif{
+    position: absolute;
+    left: 9vw;
+    font-family: 'Ubuntu', sans-serif;
+}
+.playingGif img{
+   
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+.bottom{
+    position: sticky;
+    background-color: black;
+    height: 10vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    bottom: 0px;
+    align-items: center;
+    flex-direction: column;
+    
+}
