@@ -22,7 +22,7 @@ let songs = [
     songname = '8', filepath = 'songs/11.mp3', coverpath = 'logo/dell.jpg'
 ]
 
-// for playing songs and changing name through js
+// for playing songs and changing name through javascript
 songItems.forEach((element,i )=>{
     element.getElementsByTagName("img")[0].src=songs[i].coverPath;
     element.getElementsByClassName("Songname")[0].innerText=songs[i].filepath;
